@@ -1,27 +1,503 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.4">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-    </header>
-    <main>
-        <section>
-            <h2>About Me</h2>
-            <p>This is the about section of my portfolio.</p>
-        </section>
-        <section>
-            <h2>Projects</h2>
-            <p>Here are some of my projects.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 My Portfolio</p>
-    </footer>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1">&lt;meta charset="UTF-8"/&gt;</p>
+<p class="p1">&lt;meta name="viewport" content="width=device-width,initial-scale=1.0"/&gt;</p>
+<p class="p1">&lt;title&gt;AJ Attaran | Finance Professional&lt;/title&gt;</p>
+<p class="p1">&lt;link rel="preconnect" href="https://fonts.googleapis.com"/&gt;</p>
+<p class="p1">&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/&gt;</p>
+<p class="p1">&lt;link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&amp;family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&amp;display=swap" rel="stylesheet"/&gt;</p>
+<p class="p1">&lt;style&gt;</p>
+<p class="p1">:root{--navy:#0a1628;--navy-mid:#162444;--gold:#c9a84c;--gold-light:#e2c87a;--cream:#f7f4ef;--cream-dark:#ede8e0;--slate:#4a5568;--slate-light:#8a97ab;--white:#ffffff;--display:'Cormorant Garamond',serif;--body:'DM Sans',sans-serif;}</p>
+<p class="p1">*{box-sizing:border-box;margin:0;padding:0;}html{scroll-behavior:smooth;}</p>
+<p class="p1">body{font-family:var(--body);background:var(--cream);color:var(--navy);font-size:16px;line-height:1.7;}</p>
+<p class="p1">nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,22,40,0.97);backdrop-filter:blur(10px);display:flex;align-items:center;justify-content:space-between;padding:0 5%;height:64px;border-bottom:1px solid rgba(201,168,76,0.2);}</p>
+<p class="p1">.nav-logo{font-family:var(--display);font-size:1.4rem;color:var(--gold-light);letter-spacing:.04em;text-decoration:none;}</p>
+<p class="p1">.nav-links{display:flex;gap:1.4rem;list-style:none;}</p>
+<p class="p1">.nav-links a{color:rgba(255,255,255,0.7);text-decoration:none;font-size:0.75rem;letter-spacing:.1em;text-transform:uppercase;font-weight:500;transition:color .2s;}</p>
+<p class="p1">.nav-links a:hover{color:var(--gold-light);}</p>
+<p class="p1">.hero{min-height:100vh;background:var(--navy);display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:100px 8% 80px;gap:5%;position:relative;overflow:hidden;}</p>
+<p class="p1">.hero::before{content:'';position:absolute;top:-200px;right:-200px;width:600px;height:600px;background:radial-gradient(circle,rgba(201,168,76,0.07) 0%,transparent 70%);pointer-events:none;}</p>
+<p class="p1">.hero-text{position:relative;z-index:2;}</p>
+<p class="p1">.eyebrow{font-size:.75rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem;display:flex;align-items:center;gap:12px;}</p>
+<p class="p1">.eyebrow::before{content:'';width:32px;height:1px;background:var(--gold);}</p>
+<p class="p1">.hero h1{font-family:var(--display);font-size:clamp(2.8rem,4.5vw,5rem);font-weight:400;color:var(--white);line-height:1.05;margin-bottom:1.4rem;}</p>
+<p class="p1">.hero h1 em{font-style:italic;color:var(--gold-light);}</p>
+<p class="p1">.hero-sub{font-size:1rem;color:rgba(255,255,255,0.6);max-width:420px;line-height:1.8;margin-bottom:2.4rem;}</p>
+<p class="p1">.hero-btns{display:flex;gap:1rem;flex-wrap:wrap;}</p>
+<p class="p1">.btn-gold{background:var(--gold);color:var(--navy);padding:.85rem 2rem;border-radius:2px;text-decoration:none;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;font-weight:500;transition:background .2s,transform .2s;display:inline-block;}</p>
+<p class="p1">.btn-gold:hover{background:var(--gold-light);transform:translateY(-1px);}</p>
+<p class="p1">.btn-ghost{border:1px solid rgba(255,255,255,0.3);color:rgba(255,255,255,0.8);padding:.85rem 2rem;border-radius:2px;text-decoration:none;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;font-weight:500;transition:border-color .2s,color .2s;display:inline-block;}</p>
+<p class="p1">.btn-ghost:hover{border-color:var(--gold);color:var(--gold-light);}</p>
+<p class="p1">.hero-photo{position:relative;z-index:2;display:flex;justify-content:center;}</p>
+<p class="p1">.photo-frame{width:350px;height:450px;position:relative;}</p>
+<p class="p1">.photo-frame::before{content:'';position:absolute;top:18px;left:18px;right:-18px;bottom:-18px;border:1px solid rgba(201,168,76,0.3);border-radius:2px;z-index:0;}</p>
+<p class="p1">.photo-frame img{width:100%;height:100%;object-fit:cover;object-position:top center;border-radius:2px;display:block;position:relative;z-index:1;}</p>
+<p class="p1">.photo-badge{position:absolute;bottom:-20px;left:-20px;z-index:2;background:var(--gold);color:var(--navy);padding:.9rem 1.3rem;border-radius:2px;font-size:.75rem;font-weight:500;line-height:1.5;}</p>
+<p class="p1">.photo-badge strong{display:block;font-size:1.05rem;}</p>
+<p class="p1">section{padding:90px 8%;}</p>
+<p class="p1">.sec-label{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:.8rem;display:flex;align-items:center;gap:10px;}</p>
+<p class="p1">.sec-label::before{content:'';width:26px;height:1px;background:var(--gold);}</p>
+<p class="p1">.sec-title{font-family:var(--display);font-size:clamp(2rem,3vw,2.9rem);font-weight:400;line-height:1.15;margin-bottom:1.4rem;color:var(--navy);}</p>
+<p class="p1">.sec-title-light{color:var(--white);}</p>
+<p class="p1">.two-col{display:grid;grid-template-columns:1fr 1fr;gap:6%;align-items:start;}</p>
+<p class="p1">.about{background:var(--white);}</p>
+<p class="p1">.about-text p{color:var(--slate);line-height:1.9;margin-bottom:1.1rem;font-size:.98rem;}</p>
+<p class="p1">.stats-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--cream-dark);border:1px solid var(--cream-dark);border-radius:4px;overflow:hidden;margin-top:2rem;}</p>
+<p class="p1">.stat{background:var(--cream);padding:1.5rem;text-align:center;}</p>
+<p class="p1">.stat-num{font-family:var(--display);font-size:2.2rem;color:var(--navy);font-weight:500;display:block;line-height:1;}</p>
+<p class="p1">.stat-lbl{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--slate-light);margin-top:.3rem;display:block;}</p>
+<p class="p1">.values-col h3{font-family:var(--display);font-size:1.5rem;font-weight:500;margin-bottom:1.4rem;color:var(--navy);}</p>
+<p class="p1">.value-item{display:flex;gap:1rem;align-items:flex-start;margin-bottom:1.3rem;}</p>
+<p class="p1">.v-dot{width:8px;height:8px;background:var(--gold);border-radius:50%;margin-top:8px;flex-shrink:0;}</p>
+<p class="p1">.value-item p{font-size:.92rem;color:var(--slate);line-height:1.7;}</p>
+<p class="p1">.value-item strong{color:var(--navy);}</p>
+<p class="p1">.resume-sec{background:var(--cream);}</p>
+<p class="p1">.res-col h3{font-family:var(--display);font-size:1.35rem;font-weight:500;color:var(--navy);margin-bottom:1.2rem;padding-bottom:.5rem;border-bottom:1px solid var(--gold);margin-top:2rem;}</p>
+<p class="p1">.res-col h3:first-child{margin-top:0;}</p>
+<p class="p1">.res-item{margin-bottom:1.7rem;}</p>
+<p class="p1">.res-header{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:4px;margin-bottom:.2rem;}</p>
+<p class="p1">.res-header h4{font-size:.93rem;font-weight:500;color:var(--navy);}</p>
+<p class="p1">.res-date{font-size:.74rem;color:var(--gold);font-weight:500;}</p>
+<p class="p1">.res-org{font-size:.83rem;color:var(--slate-light);font-style:italic;margin-bottom:.4rem;}</p>
+<p class="p1">.res-item ul{list-style:none;padding:0;}</p>
+<p class="p1">.res-item ul li{font-size:.86rem;color:var(--slate);padding-left:.9rem;position:relative;margin-bottom:.25rem;line-height:1.6;}</p>
+<p class="p1">.res-item ul li::before{content:'—';position:absolute;left:0;color:var(--gold);font-size:.68rem;top:5px;}</p>
+<p class="p1">.skills-wrap{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.4rem;}</p>
+<p class="p1">.sk{background:var(--navy);color:rgba(255,255,255,0.85);padding:.28rem .8rem;border-radius:2px;font-size:.73rem;letter-spacing:.04em;}</p>
+<p class="p1">.resume-dl{margin-top:2rem;text-align:center;}</p>
+<p class="p1">.video-sec{background:var(--navy);}</p>
+<p class="p1">.vid-wrap{max-width:760px;margin:2.5rem auto 0;}</p>
+<p class="p1">.vid-box{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:4px;border:1px solid rgba(201,168,76,0.25);box-shadow:0 40px 80px rgba(0,0,0,0.4);}</p>
+<p class="p1">.vid-box iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none;}</p>
+<p class="p1">.vid-cap{text-align:center;margin-top:1.2rem;color:rgba(255,255,255,0.45);font-size:.84rem;}</p>
+<p class="p1">.persona-sec{background:var(--white);}</p>
+<p class="p1">.persona-intro{max-width:700px;color:var(--slate);font-size:.97rem;line-height:1.9;margin-bottom:3.5rem;}</p>
+<p class="p1">.sub-h{font-family:var(--display);font-size:1.5rem;font-weight:500;color:var(--navy);margin-bottom:.4rem;}</p>
+<p class="p1">.sub-p{color:var(--slate);font-size:.91rem;line-height:1.75;margin-bottom:1.6rem;}</p>
+<p class="p1">.cv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem;margin-bottom:3.5rem;}</p>
+<p class="p1">.cv-card{background:var(--cream);border-radius:4px;padding:1.5rem;}</p>
+<p class="p1">.cv-icon{width:36px;height:36px;background:var(--navy);border-radius:2px;display:flex;align-items:center;justify-content:center;margin-bottom:.8rem;font-size:.95rem;color:var(--gold);}</p>
+<p class="p1">.cv-card h4{font-family:var(--display);font-size:1.05rem;font-weight:600;color:var(--navy);margin-bottom:.35rem;}</p>
+<p class="p1">.cv-card p{font-size:.84rem;color:var(--slate);line-height:1.6;}</p>
+<p class="p1">.comm-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem;margin-bottom:1.4rem;}</p>
+<p class="p1">.comm-card{border:1px solid var(--cream-dark);border-radius:4px;padding:1.6rem;}</p>
+<p class="p1">.comm-card.dark{background:var(--navy);border-color:var(--navy);}</p>
+<p class="p1">.comm-lbl{font-size:.68rem;letter-spacing:.15em;text-transform:uppercase;color:var(--slate-light);margin-bottom:.35rem;}</p>
+<p class="p1">.comm-card.dark .comm-lbl{color:var(--gold);}</p>
+<p class="p1">.comm-card h4{font-family:var(--display);font-size:1.35rem;font-weight:600;color:var(--navy);margin-bottom:.5rem;}</p>
+<p class="p1">.comm-card.dark h4{color:var(--white);}</p>
+<p class="p1">.comm-card p{font-size:.86rem;color:var(--slate);line-height:1.7;}</p>
+<p class="p1">.comm-card.dark p{color:rgba(255,255,255,0.62);}</p>
+<p class="p1">.wep-chart{margin:1.1rem 0 2rem;}</p>
+<p class="p1">.wep-row{display:grid;grid-template-columns:130px 1fr 42px;align-items:center;gap:1rem;margin-bottom:.6rem;}</p>
+<p class="p1">.wep-lbl{font-size:.79rem;color:var(--slate);text-align:right;}</p>
+<p class="p1">.wep-track{height:8px;background:var(--cream-dark);border-radius:4px;overflow:hidden;}</p>
+<p class="p1">.wep-fill{height:100%;border-radius:4px;}</p>
+<p class="p1">.wep-fill.navy{background:var(--navy);}</p>
+<p class="p1">.wep-fill.gold{background:var(--gold);}</p>
+<p class="p1">.wep-val{font-size:.77rem;font-weight:500;color:var(--navy);}</p>
+<p class="p1">.adj-legend{display:flex;gap:1.3rem;margin-bottom:.9rem;flex-wrap:wrap;}</p>
+<p class="p1">.adj-li{display:flex;align-items:center;gap:.4rem;font-size:.77rem;color:var(--slate);}</p>
+<p class="p1">.adj-dot{width:11px;height:11px;border-radius:50%;border:2px solid;flex-shrink:0;}</p>
+<p class="p1">.adj-cloud{display:flex;flex-wrap:wrap;gap:.5rem;margin:1rem 0 2rem;}</p>
+<p class="p1">.adj-tag{padding:.33rem .9rem;border-radius:100px;font-size:.79rem;font-weight:500;border:1.5px solid;}</p>
+<p class="p1">.adj-tag.self{border-color:var(--navy);color:var(--navy);}</p>
+<p class="p1">.adj-tag.both{border-color:var(--gold);background:rgba(201,168,76,0.12);color:#7a5800;}</p>
+<p class="p1">.adj-tag.others{border-color:var(--slate-light);color:var(--slate);}</p>
+<p class="p1">.team-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem;margin-bottom:3rem;}</p>
+<p class="p1">.team-card{background:var(--cream);border-radius:4px;padding:1.4rem;}</p>
+<p class="p1">.team-card h4{font-size:.93rem;font-weight:500;color:var(--navy);margin-bottom:.4rem;}</p>
+<p class="p1">.team-card p{font-size:.85rem;color:var(--slate);line-height:1.65;}</p>
+<p class="p1">.gm-box{background:var(--cream);border-left:3px solid var(--gold);border-radius:0 4px 4px 0;padding:1.6rem;margin-bottom:1.2rem;}</p>
+<p class="p1">.gm-box h4{font-size:.93rem;font-weight:500;color:var(--navy);margin-bottom:.45rem;}</p>
+<p class="p1">.gm-box p{font-size:.87rem;color:var(--slate);line-height:1.7;}</p>
+<p class="p1">.quotes-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem;margin-bottom:2rem;}</p>
+<p class="p1">.q-card{background:var(--cream);border-left:3px solid var(--gold);padding:1.3rem 1.3rem 1.3rem 1.6rem;border-radius:0 4px 4px 0;position:relative;}</p>
+<p class="p1">.q-card::before{content:'\201C';font-family:var(--display);font-size:3.2rem;color:var(--gold);opacity:.25;position:absolute;top:-5px;left:9px;line-height:1;}</p>
+<p class="p1">.q-card p{font-size:.86rem;color:var(--slate);line-height:1.7;position:relative;}</p>
+<p class="p1">.reflection{background:var(--navy);border-radius:4px;padding:2.6rem;margin-top:2rem;}</p>
+<p class="p1">.reflection h3{font-family:var(--display);font-size:1.65rem;font-weight:400;color:var(--gold-light);margin-bottom:1rem;}</p>
+<p class="p1">.reflection p{color:rgba(255,255,255,0.67);line-height:1.9;margin-bottom:1rem;font-size:.93rem;}</p>
+<p class="p1">.portfolio-sec{background:var(--cream);}</p>
+<p class="p1">.port-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.7rem;margin-top:2.5rem;}</p>
+<p class="p1">.port-card{background:var(--white);border-radius:4px;border:1px solid var(--cream-dark);overflow:hidden;transition:transform .25s,box-shadow .25s;}</p>
+<p class="p1">.port-card:hover{transform:translateY(-4px);box-shadow:0 20px 50px rgba(10,22,40,0.1);}</p>
+<p class="p1">.port-head{background:var(--navy);padding:1.5rem;display:flex;align-items:center;gap:1rem;}</p>
+<p class="p1">.port-icon{width:40px;height:40px;background:rgba(201,168,76,0.15);border:1px solid rgba(201,168,76,0.3);border-radius:2px;display:flex;align-items:center;justify-content:center;font-size:1.05rem;color:var(--gold);flex-shrink:0;}</p>
+<p class="p1">.port-head h4{font-family:var(--display);font-size:1.05rem;font-weight:500;color:var(--white);}</p>
+<p class="p1">.port-head span{font-size:.68rem;color:var(--gold);letter-spacing:.1em;text-transform:uppercase;display:block;margin-top:2px;}</p>
+<p class="p1">.port-body{padding:1.5rem;}</p>
+<p class="p1">.port-ctx{font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:.35rem;}</p>
+<p class="p1">.port-body&gt;p{color:var(--slate);font-size:.87rem;line-height:1.7;margin-bottom:.85rem;}</p>
+<p class="p1">.port-claim{background:var(--cream);border-radius:4px;padding:.85rem 1rem;margin-bottom:.7rem;}</p>
+<p class="p1">.port-claim strong{font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--navy);display:block;margin-bottom:.22rem;}</p>
+<p class="p1">.port-claim p{font-size:.83rem;color:var(--slate);margin-bottom:0;line-height:1.5;}</p>
+<p class="p1">.port-link{display:inline-block;margin-top:.7rem;font-size:.76rem;color:var(--gold);text-decoration:none;letter-spacing:.06em;text-transform:uppercase;border-bottom:1px solid rgba(201,168,76,0.35);padding-bottom:2px;transition:color .2s;}</p>
+<p class="p1">.port-link:hover{color:var(--navy);}</p>
+<p class="p1">.tab-label{font-size:.68rem;letter-spacing:.15em;text-transform:uppercase;color:var(--slate-light);margin:1.2rem 0 .5rem;}</p>
+<p class="p1">.tab-imgs{display:grid;grid-template-columns:1fr 1fr;gap:.8rem;}</p>
+<p class="p1">.tab-img-wrap{border-radius:4px;overflow:hidden;border:1px solid var(--cream-dark);}</p>
+<p class="p1">.tab-img-wrap img{width:100%;display:block;}</p>
+<p class="p1">.tab-cap{font-size:.75rem;color:var(--slate-light);padding:.45rem .6rem;background:var(--cream);border-top:1px solid var(--cream-dark);}</p>
+<p class="p1">.contact-sec{background:var(--navy);}</p>
+<p class="p1">.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:6%;margin-top:2.5rem;align-items:start;}</p>
+<p class="p1">.contact-text p{color:rgba(255,255,255,0.6);line-height:1.9;margin-bottom:2rem;font-size:.96rem;}</p>
+<p class="p1">.c-links{display:flex;flex-direction:column;gap:.7rem;}</p>
+<p class="p1">.c-link{display:flex;align-items:center;gap:1rem;color:rgba(255,255,255,0.8);text-decoration:none;font-size:.89rem;transition:color .2s;padding:.65rem 0;border-bottom:1px solid rgba(255,255,255,0.07);}</p>
+<p class="p1">.c-link:hover{color:var(--gold-light);}</p>
+<p class="p1">.c-icon{width:33px;height:33px;background:rgba(201,168,76,0.12);border:1px solid rgba(201,168,76,0.25);border-radius:2px;display:flex;align-items:center;justify-content:center;font-size:.9rem;color:var(--gold);flex-shrink:0;}</p>
+<p class="p1">.c-form{background:rgba(255,255,255,0.05);border-radius:4px;padding:2rem;border:1px solid rgba(255,255,255,0.1);}</p>
+<p class="p1">.fg{margin-bottom:1rem;}</p>
+<p class="p1">.fg label{display:block;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:.4rem;}</p>
+<p class="p1">.fg input,.fg textarea{width:100%;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.14);border-radius:2px;color:var(--white);padding:.75rem .95rem;font-family:var(--body);font-size:.89rem;outline:none;transition:border-color .2s;}</p>
+<p class="p1">.fg input:focus,.fg textarea:focus{border-color:var(--gold);}</p>
+<p class="p1">.fg textarea{height:95px;resize:vertical;}</p>
+<p class="p1">.fg input::placeholder,.fg textarea::placeholder{color:rgba(255,255,255,0.28);}</p>
+<p class="p1">.btn-send{width:100%;background:var(--gold);color:var(--navy);border:none;padding:.85rem;font-family:var(--body);font-size:.79rem;letter-spacing:.12em;text-transform:uppercase;font-weight:500;border-radius:2px;cursor:pointer;transition:background .2s;}</p>
+<p class="p1">.btn-send:hover{background:var(--gold-light);}</p>
+<p class="p1">footer{background:#060e1a;padding:1.7rem 8%;display:flex;align-items:center;justify-content:space-between;border-top:1px solid rgba(201,168,76,0.1);}</p>
+<p class="p1">footer p{font-size:.77rem;color:rgba(255,255,255,0.28);}</p>
+<p class="p1">.foot-logo{font-family:var(--display);font-size:1.1rem;color:var(--gold);opacity:.55;}</p>
+<p class="p1">.persona-block{margin-bottom:3.5rem;}</p>
+<p class="p1">@media(max-width:900px){</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.hero{grid-template-columns:1fr;padding:120px 6% 80px;}.hero-photo{display:none;}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.two-col,.comm-grid,.team-grid,.contact-grid,.port-grid{grid-template-columns:1fr;}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.cv-grid,.quotes-grid{grid-template-columns:1fr;}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.tab-imgs{grid-template-columns:1fr;}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.nav-links{display:none;}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.wep-row{grid-template-columns:90px 1fr 36px;}</p>
+<p class="p1">}</p>
+<p class="p1">&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;nav&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;a href="#home" class="nav-logo"&gt;AJ Attaran&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;ul class="nav-links"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;li&gt;&lt;a href="#resume"&gt;Resume&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;li&gt;&lt;a href="#video"&gt;Video&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;li&gt;&lt;a href="#persona"&gt;Persona&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;li&gt;&lt;a href="#portfolio"&gt;Portfolio&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/ul&gt;</p>
+<p class="p1">&lt;/nav&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- HERO --&gt;</p>
+<p class="p1">&lt;section class="hero" id="home"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="hero-text"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="eyebrow"&gt;Finance &amp;amp; Wealth Management&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1&gt;Built to &lt;em&gt;Lead,&lt;/em&gt;&lt;br&gt;Driven by Numbers&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="hero-sub"&gt;Finance student at the University of Arizona's Eller College of Management — passionate about wealth management, financial markets, and helping individuals build lasting financial security.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="hero-btns"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;a href="#contact" class="btn-gold"&gt;Get in Touch&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;a href="#resume" class="btn-ghost"&gt;View Resume&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="hero-photo"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="photo-frame"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;img src="headshot.jpeg" alt="AJ Attaran"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="photo-badge"&gt;&lt;strong&gt;3.63&lt;/strong&gt;GPA · Dean's List&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- ABOUT --&gt;</p>
+<p class="p1">&lt;section class="about" id="about"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="sec-label"&gt;Who I Am &amp;amp; What I Stand For&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="two-col"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="about-text"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2 class="sec-title"&gt;Discipline, Purpose,&lt;br&gt;and a Long-Term Vision&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;I'm AJ Attaran, a finance student at the University of Arizona with a strong interest in wealth management and financial markets. My drive comes from a desire to build financial independence and create long-term opportunities — not just for myself, but for my family as well.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;Since coming to college, I've developed a more disciplined and purpose-driven approach to both academics and daily life, balancing coursework, internships, and leadership roles within my fraternity. These experiences have sharpened my analytical thinking, work ethic, and ability to lead and collaborate under pressure.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;My goal is to make a meaningful impact in wealth management by helping individuals and families build, grow, and protect their financial future with confidence.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="stats-grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="stat"&gt;&lt;span class="stat-num"&gt;3.63&lt;/span&gt;&lt;span class="stat-lbl"&gt;GPA&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="stat"&gt;&lt;span class="stat-num"&gt;4×&lt;/span&gt;&lt;span class="stat-lbl"&gt;Dean's List&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="stat"&gt;&lt;span class="stat-num"&gt;1,200+&lt;/span&gt;&lt;span class="stat-lbl"&gt;Members Recruited&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="stat"&gt;&lt;span class="stat-num"&gt;2027&lt;/span&gt;&lt;span class="stat-lbl"&gt;Graduation&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="values-col"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="sec-label"&gt;Core Values&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h3&gt;What Drives Everything I Do&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="value-item"&gt;&lt;div class="v-dot"&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Discipline —&lt;/strong&gt; Consistent effort and daily habits separate average from exceptional. My growth in college has come from committing to structure, accountability, and doing the work even when it's uncomfortable.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="value-item"&gt;&lt;div class="v-dot"&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Accountability —&lt;/strong&gt; I take ownership of my results and understand that my future is a direct reflection of my actions. This mindset drives me in academics, career, and personal development.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="value-item"&gt;&lt;div class="v-dot"&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Growth —&lt;/strong&gt; I value continuous improvement and always strive to be better than I was yesterday. Whether in school, work, or leadership, I seek challenges that force me to evolve.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="value-item"&gt;&lt;div class="v-dot"&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Relationships —&lt;/strong&gt; Wealth management is ultimately a people business. I believe trust is the foundation of every great client relationship, and I invest in building it genuinely.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- RESUME --&gt;</p>
+<p class="p1">&lt;section class="resume-sec" id="resume"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="sec-label"&gt;Experience &amp;amp; Proven Results&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;h2 class="sec-title"&gt;My Professional Journey&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="two-col"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h3 class="res-col" style="font-family:var(--display);font-size:1.35rem;font-weight:500;color:var(--navy);padding-bottom:.5rem;border-bottom:1px solid var(--gold);margin-bottom:1.2rem;"&gt;Education&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="res-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="res-header"&gt;&lt;h4&gt;University of Arizona, Eller College of Management&lt;/h4&gt;&lt;span class="res-date"&gt;May 2027&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="res-org"&gt;B.S. Business Administration — Finance · Tucson, AZ&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;ul&gt;&lt;li&gt;GPA: 3.63&lt;/li&gt;&lt;li&gt;Dean's List with Distinction (Full Time ×2)&lt;/li&gt;&lt;li&gt;Dean's List — Full Time ×2&lt;/li&gt;&lt;li&gt;Arizona Distinction Scholarship&lt;/li&gt;&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h3 style="font-family:var(--display);font-size:1.35rem;font-weight:500;color:var(--navy);padding-bottom:.5rem;border-bottom:1px solid var(--gold);margin-bottom:1.2rem;margin-top:1.8rem;"&gt;Professional Experience&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="res-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="res-header"&gt;&lt;h4&gt;BMWC Constructors&lt;/h4&gt;&lt;span class="res-date"&gt;May–Aug 2025&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="res-org"&gt;EHS Intern · Hillsboro, Oregon&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;ul&gt;&lt;li&gt;Supported multimillion-dollar projects at Intel, one of the largest semiconductor facilities on the West Coast&lt;/li&gt;&lt;li&gt;Conducted risk and compliance audits that informed budgeting and project planning decisions&lt;/li&gt;&lt;li&gt;Applied OSHA standards to deliver actionable insights, improving cost control and efficiency&lt;/li&gt;&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="res-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="res-header"&gt;&lt;h4&gt;Campus Recreation, U of A&lt;/h4&gt;&lt;span class="res-date"&gt;Jan 2025–Present&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="res-org"&gt;Facilities Manager · Tucson, Arizona&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;ul&gt;&lt;li&gt;Ensured safe, efficient daily operations serving 1,000+ facility users&lt;/li&gt;&lt;li&gt;Resolved member concerns and supported large-scale campus events&lt;/li&gt;&lt;li&gt;Partnered with staff to streamline processes and improve efficiency&lt;/li&gt;&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="res-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="res-header"&gt;&lt;h4&gt;Maintenance Man Unlimited&lt;/h4&gt;&lt;span class="res-date"&gt;May–Sep 2024&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="res-org"&gt;Construction Worker · Portland, Oregon&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;ul&gt;&lt;li&gt;Executed tasks in fast-paced, deadline-driven environments&lt;/li&gt;&lt;li&gt;Collaborated with contractors and clients to meet project timelines&lt;/li&gt;&lt;li&gt;Gained hands-on exposure to project planning, compliance, and resource management&lt;/li&gt;&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h3 style="font-family:var(--display);font-size:1.35rem;font-weight:500;color:var(--navy);padding-bottom:.5rem;border-bottom:1px solid var(--gold);margin-bottom:1.2rem;"&gt;Leadership&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="res-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="res-header"&gt;&lt;h4&gt;VP of Recruitment — Sigma Phi Epsilon&lt;/h4&gt;&lt;span class="res-date"&gt;Nov 2024–Nov 2025&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="res-org"&gt;University of Arizona · Tucson, Arizona&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;ul&gt;&lt;li&gt;Directed recruitment process for 1,200+ potential new members&lt;/li&gt;&lt;li&gt;Coordinated logistics and budgets for multi-day recruitment events&lt;/li&gt;&lt;li&gt;Developed strategic communication and planning skills applicable to client development&lt;/li&gt;&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="res-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="res-header"&gt;&lt;h4&gt;Academic Chair — Sigma Phi Epsilon&lt;/h4&gt;&lt;span class="res-date"&gt;Nov 2024–Nov 2025&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="res-org"&gt;University of Arizona · Tucson, Arizona&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;ul&gt;&lt;li&gt;Mentored 40 first-year members on academics, leadership, and personal growth&lt;/li&gt;&lt;li&gt;Led workshops on study skills, time management, and goal-setting&lt;/li&gt;&lt;li&gt;Promoted accountability through peer mentorship and structured programming&lt;/li&gt;&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h3 style="font-family:var(--display);font-size:1.35rem;font-weight:500;color:var(--navy);padding-bottom:.5rem;border-bottom:1px solid var(--gold);margin-bottom:1.2rem;margin-top:1.8rem;"&gt;Skills &amp;amp; Activities&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="res-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="skills-wrap"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="sk"&gt;Excel&lt;/span&gt;&lt;span class="sk"&gt;PowerPoint&lt;/span&gt;&lt;span class="sk"&gt;Tableau&lt;/span&gt;&lt;span class="sk"&gt;Financial Analysis&lt;/span&gt;&lt;span class="sk"&gt;Public Speaking&lt;/span&gt;&lt;span class="sk"&gt;Leadership&lt;/span&gt;&lt;span class="sk"&gt;Risk &amp;amp; Compliance&lt;/span&gt;&lt;span class="sk"&gt;Strategic Planning&lt;/span&gt;&lt;span class="sk"&gt;Data Visualization&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="res-item" style="margin-top:.5rem;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;ul&gt;&lt;li&gt;Finance Committee, Sigma Phi Epsilon&lt;/li&gt;&lt;li&gt;Assistant High School Football Coach&lt;/li&gt;&lt;li&gt;Weightlifting, Triathlon, Hiking, Pickleball, Golf&lt;/li&gt;&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="resume-dl"&gt;&lt;a href="AJ_Resume.pdf" target="_blank" class="btn-gold"&gt;Download Full Resume (PDF)&lt;/a&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- VIDEO --&gt;</p>
+<p class="p1">&lt;section class="video-sec" id="video"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="sec-label" style="color:var(--gold);"&gt;My Story: Built, Not Given&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;h2 class="sec-title sec-title-light"&gt;See Me in Action&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="vid-wrap"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="vid-box"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;iframe src="https://www.youtube.com/embed/lvnp07VzANg" title="AJ Attaran Professional Persona Video" allowfullscreen&gt;&lt;/iframe&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="vid-cap"&gt;My professional persona video — created for BCOM 314 at the Eller College of Management, University of Arizona&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- PERSONA EVOLUTION --&gt;</p>
+<p class="p1">&lt;section class="persona-sec" id="persona"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="sec-label"&gt;From Potential to Discipline&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;h2 class="sec-title"&gt;Identity, Brand &amp;amp; Reputation&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;p class="persona-intro"&gt;Throughout BCOM 314, I collected structured data on how I perceive myself versus how others perceive me — using a Self-Perception Inventory (SPI), a Professional Reputation Survey (3 respondents), and team 360° evaluations. The SPI is a scored self-assessment measuring attitudinal communication style and work environment preferences. The Professional Reputation Survey asks people in your network to rate your behavioral communication tendencies and select adjectives that describe you. Together, these tools answer one key question: to what extent does my self-perception align with how others perceive me?&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- 1. CORE VALUES --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="persona-block"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2 class="sub-h"&gt;Core Values: The Foundation of My Brand&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="sub-p"&gt;My three core values — Discipline, Accountability, and Growth — appear consistently across both my self-perception and the adjectives others selected to describe me. Respondents who chose "Hard-Working," "Driven," and "Perfectionistic" are confirming externally what I hold as my internal identity. This alignment is the foundation of a credible, authentic professional brand.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="cv-grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="cv-card"&gt;&lt;div class="cv-icon"&gt;⚡&lt;/div&gt;&lt;h4&gt;Discipline&lt;/h4&gt;&lt;p&gt;Consistent effort and daily habits separate average from exceptional. This value shows up in my 3.63 GPA, my Dean's List record, and how I approach every internship and leadership role.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="cv-card"&gt;&lt;div class="cv-icon"&gt;🎯&lt;/div&gt;&lt;h4&gt;Accountability&lt;/h4&gt;&lt;p&gt;I take ownership of my results. My future is a direct reflection of my actions — a belief that drives my academic performance, career decisions, and personal development.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="cv-card"&gt;&lt;div class="cv-icon"&gt;📈&lt;/div&gt;&lt;h4&gt;Growth&lt;/h4&gt;&lt;p&gt;I actively seek challenges that force me to evolve. Earlier in college I was comfortable being average — that changed. I now embrace difficulty as the fastest path to becoming better.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- 2. COMMUNICATION STYLE --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="persona-block"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2 class="sub-h"&gt;Behavioral Communication Style&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="sub-p"&gt;The SPI classifies communication style along two behavioral axes: Composite Proactivity/Assertiveness (x-axis) and Composite Emotiveness/Reactivity (y-axis). Scores to the right of center indicate higher proactivity; scores above center indicate higher expressiveness. My results place me at the Driver/Expressive border — confirmed by how others rated me.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="comm-grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="comm-card dark"&gt;&lt;div class="comm-lbl"&gt;Self-Perception Inventory (SPI)&lt;/div&gt;&lt;h4&gt;Driver / Expressive&lt;/h4&gt;&lt;p&gt;Proactivity: 2.0 &amp;nbsp;·&amp;nbsp; Reactivity: 0.0. I see myself as purposefully assertive but emotionally measured — I lead conversations with intention rather than impulse.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="comm-card"&gt;&lt;div class="comm-lbl"&gt;Professional Reputation Survey (3 respondents)&lt;/div&gt;&lt;h4&gt;Driver&lt;/h4&gt;&lt;p&gt;Proactivity: 5.0 &amp;nbsp;·&amp;nbsp; Reactivity: −0.3. Others perceive me as significantly more proactive than I rate myself — and even more emotionally steady. My outward presence reads louder than I feel internally.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="sub-p" style="margin-bottom:0;"&gt;&lt;strong style="color:var(--navy);"&gt;Key insight:&lt;/strong&gt; The gap between my self-rated proactivity (2.0) and others' perception (5.0) is the most striking finding in my data. I experience myself as moderately assertive, but colleagues observe a highly decisive, take-charge communicator. This is a strength in financial services — but I must balance it by creating deliberate space for others to contribute.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- 3. WEP --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="persona-block"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2 class="sub-h"&gt;Work Environment Preferences&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="sub-p"&gt;The SPI's Work Environment Preferences (WEP) module measures eight dimensions of professional work style on a 0–3 scale (Low / Mid / High). These scores reveal where I naturally thrive — and where I have meaningful opportunities to grow.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="wep-chart"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="wep-row"&gt;&lt;div class="wep-lbl"&gt;Hierarchy&lt;/div&gt;&lt;div class="wep-track"&gt;&lt;div class="wep-fill gold" style="width:89%"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="wep-val"&gt;2.67&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="wep-row"&gt;&lt;div class="wep-lbl"&gt;Relationships&lt;/div&gt;&lt;div class="wep-track"&gt;&lt;div class="wep-fill gold" style="width:89%"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="wep-val"&gt;2.67&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="wep-row"&gt;&lt;div class="wep-lbl"&gt;Debate&lt;/div&gt;&lt;div class="wep-track"&gt;&lt;div class="wep-fill navy" style="width:67%"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="wep-val"&gt;2.00&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="wep-row"&gt;&lt;div class="wep-lbl"&gt;Decision-Making&lt;/div&gt;&lt;div class="wep-track"&gt;&lt;div class="wep-fill navy" style="width:67%"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="wep-val"&gt;2.00&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="wep-row"&gt;&lt;div class="wep-lbl"&gt;Conflict&lt;/div&gt;&lt;div class="wep-track"&gt;&lt;div class="wep-fill navy" style="width:44%"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="wep-val"&gt;1.33&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="wep-row"&gt;&lt;div class="wep-lbl"&gt;Context&lt;/div&gt;&lt;div class="wep-track"&gt;&lt;div class="wep-fill navy" style="width:44%"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="wep-val"&gt;1.33&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="wep-row"&gt;&lt;div class="wep-lbl"&gt;Chronemics&lt;/div&gt;&lt;div class="wep-track"&gt;&lt;div class="wep-fill navy" style="width:33%"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="wep-val"&gt;1.00&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="wep-row"&gt;&lt;div class="wep-lbl"&gt;Feedback&lt;/div&gt;&lt;div class="wep-track"&gt;&lt;div class="wep-fill navy" style="width:22%"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="wep-val"&gt;0.67&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="sub-p" style="margin-bottom:0;"&gt;&lt;strong style="color:var(--navy);"&gt;Key insight:&lt;/strong&gt; My highest scores in Hierarchy (2.67) and Relationships (2.67) reflect a preference for structured, team-oriented environments with clear roles — a natural fit for financial services. My low Feedback score (0.67) is a real growth opportunity: building a more intentional habit of seeking and integrating feedback will make me a stronger analyst and advisor.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- 4. ADJECTIVES --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="persona-block"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2 class="sub-h"&gt;How Words Travel: Self vs. Reputation&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="sub-p"&gt;The adjectives I selected in the SPI alongside what my 3 Professional Reputation Survey respondents chose reveal where my identity and reputation converge — and where others see qualities in me I hadn't fully claimed for myself.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="adj-legend"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="adj-li"&gt;&lt;div class="adj-dot" style="border-color:var(--navy);"&gt;&lt;/div&gt;Self-selected only&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="adj-li"&gt;&lt;div class="adj-dot" style="border-color:var(--gold);background:rgba(201,168,76,0.15);"&gt;&lt;/div&gt;Confirmed by all 3 respondents&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="adj-li"&gt;&lt;div class="adj-dot" style="border-color:var(--slate-light);"&gt;&lt;/div&gt;Others' perception only&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="adj-cloud"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;span class="adj-tag both"&gt;Hard-Working&lt;/span&gt;&lt;span class="adj-tag both"&gt;Growth-Oriented&lt;/span&gt;&lt;span class="adj-tag both"&gt;Competitive&lt;/span&gt;&lt;span class="adj-tag both"&gt;Perfectionistic&lt;/span&gt;&lt;span class="adj-tag both"&gt;Leaderlike&lt;/span&gt;&lt;span class="adj-tag both"&gt;Outgoing&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;span class="adj-tag self"&gt;Social&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;span class="adj-tag others"&gt;Driven&lt;/span&gt;&lt;span class="adj-tag others"&gt;Caring&lt;/span&gt;&lt;span class="adj-tag others"&gt;Curious&lt;/span&gt;&lt;span class="adj-tag others"&gt;Idea-Generator&lt;/span&gt;&lt;span class="adj-tag others"&gt;Risk-Taker&lt;/span&gt;&lt;span class="adj-tag others"&gt;Adventurous&lt;/span&gt;&lt;span class="adj-tag others"&gt;Empathetic&lt;/span&gt;&lt;span class="adj-tag others"&gt;Well-Rounded&lt;/span&gt;&lt;span class="adj-tag others"&gt;Good with Numbers&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="sub-p" style="margin-bottom:0;"&gt;&lt;strong style="color:var(--navy);"&gt;What stands out:&lt;/strong&gt; All 3 respondents confirmed Driven, Caring, Curious, Idea-Generator, Leaderlike, Hard-Working, Competitive, and Perfectionistic. Notably, others also identified me as Empathetic and Good with Numbers — qualities I didn't self-select, but that map directly to the relational and analytical demands of wealth management. My reputation is already building toward the career I'm pursuing.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- 5. TEAM CULTURE --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="persona-block"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2 class="sub-h"&gt;Team Culture Findings&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="sub-p"&gt;My SPI results — particularly my high Hierarchy and Relationships scores — reveal that I thrive in structured environments with clear roles, where strong interpersonal communication and trust are equally valued. These preferences played out directly in my team experience this semester.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="team-grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="team-card"&gt;&lt;h4&gt;What My Preferences Look Like&lt;/h4&gt;&lt;p&gt;I prefer teams with defined roles and clear decision-making structures. At the same time, I invest in building genuine rapport — I want teammates to feel heard and included, not just directed. My equal WEP scores (Hierarchy 2.67, Relationships 2.67) confirm both tendencies work in tandem.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="team-card"&gt;&lt;h4&gt;Wildcat Strategy: In Practice&lt;/h4&gt;&lt;p&gt;In my BCOM 314 consulting team, I naturally took on a leadership role by organizing tasks, structuring timelines, and keeping the group aligned on our Neutrogena deliverables. Simultaneously, I focused on making sure every member felt involved — checking in, distributing responsibilities, and ensuring the group remained both efficient and collaborative.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- 6. GROWTH MINDSET --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="persona-block"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2 class="sub-h"&gt;Growth Mindset: From Comfortable to Driven&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="sub-p"&gt;A growth mindset is the belief that abilities and intelligence can be developed through dedication and effort. Earlier in college, I operated with more of a fixed mindset — comfortable being average, resistant to discomfort. That has fundamentally shifted.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="gm-box"&gt;&lt;h4&gt;Where I Started&lt;/h4&gt;&lt;p&gt;In my first year, I prioritized comfort over challenge. I completed assignments without pushing myself to deeply understand the material or exceed expectations. My mindset was task-oriented rather than growth-oriented.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="gm-box"&gt;&lt;h4&gt;The Shift&lt;/h4&gt;&lt;p&gt;Feedback from my instructor and teammates pushed me to be more intentional — to clearly explain my thinking, avoid surface-level analysis, and fully understand concepts rather than just completing tasks. That feedback was uncomfortable at first, but it catalyzed a real change in how I approach academic and professional work.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="gm-box"&gt;&lt;h4&gt;Where I Am Now &amp;amp; What I'm Actively Improving&lt;/h4&gt;&lt;p&gt;I now embrace challenges as the fastest path to growth. The specific skill I am most intentionally developing is the ability to communicate complex ideas clearly and professionally in high-stakes settings — whether presenting to a client, pitching to an employer, or leading a team through ambiguity.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- 7. REPUTATION QUOTES --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="persona-block"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2 class="sub-h"&gt;What Others Say: Reputation Survey Responses&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="sub-p"&gt;These reflections from my Professional Reputation Survey respondents capture recurring themes in how I am perceived — and where I have room to grow.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="quotes-grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="q-card"&gt;&lt;p&gt;AJ is a great communicator and naturally energetic — he leads conversations with real presence and confidence. His growth edge is learning when to step back and invite others in, which will make his leadership even more powerful.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="q-card"&gt;&lt;p&gt;He would benefit from asking more questions and staying genuinely curious about how others feel when ideas are being discussed. That active curiosity will deepen the trust he builds with clients and colleagues.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="q-card"&gt;&lt;p&gt;Regardless of field or title, you will never please everyone. It is imperative to believe in what you are doing and have conviction in your actions — and that conviction is something AJ clearly has.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- REFLECTION --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="reflection"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h3&gt;Moving Forward: Closing the Gap&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;The most important finding from this semester's data is not where my identity and reputation differ — it is how closely they already align. My core values of Discipline, Accountability, and Growth appear consistently across both my self-perception and what others observe in me. That alignment is the foundation of a credible professional brand.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;The gap I plan to close is on the listening and curiosity dimension. Feedback consistently points to a tendency to lead rather than inquire — a strength in high-stakes environments, but one that limits depth in collaborative and client-facing settings. In wealth management, where understanding a client's complete financial picture requires patient, empathetic inquiry, this is a skill I will actively develop.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;&lt;strong style="color:var(--gold-light);"&gt;My professional development goals for the next 1–2 years:&lt;/strong&gt; Gain hands-on experience in wealth management or financial advising. Build technical expertise in investment analysis and portfolio strategy. And develop into a more structured, confident communicator — one who can translate complex financial information into clear, compelling narratives for any audience.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- PORTFOLIO --&gt;</p>
+<p class="p1">&lt;section class="portfolio-sec" id="portfolio"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="sec-label"&gt;Work That Reflects My Value&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;h2 class="sec-title"&gt;Selected Work Samples&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="port-grid"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="port-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="port-head"&gt;&lt;div class="port-icon"&gt;📊&lt;/div&gt;&lt;div&gt;&lt;h4&gt;Stakeholder Analysis: Neutrogena&lt;/h4&gt;&lt;span&gt;Strategic Communication · Group · BCOM 314&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="port-body"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="port-ctx"&gt;Context&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Developed for BCOM 314 as part of a 5-person consulting team (Wildcat Strategy). I led the Strategic Framework section, framing the core communication challenge behind Neutrogena's FDA recall crisis.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="port-claim"&gt;&lt;strong&gt;Skills Demonstrated&lt;/strong&gt;&lt;p&gt;Stakeholder mapping, brand reputation analysis, crisis communication frameworks, data-backed argument construction&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="port-claim"&gt;&lt;strong&gt;My Contribution&lt;/strong&gt;&lt;p&gt;Authored and presented the opening strategic framework — defining the gap between Neutrogena's intended identity and its actual post-recall reputation. I structured the analytical lens for the entire presentation.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="Stakeholder_Analysis.pdf" target="_blank" class="port-link"&gt;View Full PDF →&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="port-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="port-head"&gt;&lt;div class="port-icon"&gt;📋&lt;/div&gt;&lt;div&gt;&lt;h4&gt;Client Communication Plan: Neutrogena&lt;/h4&gt;&lt;span&gt;Strategic Communication · Group · BCOM 314&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="port-body"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="port-ctx"&gt;Context&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Follow-up deliverable by the same consulting team, designing the full communication strategy — how Neutrogena should respond to the recall, engage Gen Z consumers, and rebuild brand trust.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="port-claim"&gt;&lt;strong&gt;Skills Demonstrated&lt;/strong&gt;&lt;p&gt;Communication strategy design, audience segmentation, strategic messaging, data visualization, persuasive presentation&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="port-claim"&gt;&lt;strong&gt;My Contribution&lt;/strong&gt;&lt;p&gt;Developed the FSRS framework slide series — explaining why Neutrogena needed to understand the crisis, strategize its response, and implement with accountability. Delivered these slides in the live client presentation.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="Client_Communication_Plan.pdf" target="_blank" class="port-link"&gt;View Full PDF →&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="port-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="port-head"&gt;&lt;div class="port-icon"&gt;📈&lt;/div&gt;&lt;div&gt;&lt;h4&gt;Retail Data Analysis: Tableau Dashboard&lt;/h4&gt;&lt;span&gt;Data Visualization · Individual Project&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="port-body"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="port-ctx"&gt;Context&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;An individually authored Tableau dashboard analyzing weekly sales performance across four major retailers to identify which store offered the strongest investment potential for a hypothetical mall placement decision.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="port-claim"&gt;&lt;strong&gt;Skills Demonstrated&lt;/strong&gt;&lt;p&gt;Data visualization, financial analysis, investment reasoning, geographic mapping, written analytical conclusions&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="port-claim"&gt;&lt;strong&gt;My Contribution (Sole Author)&lt;/strong&gt;&lt;p&gt;Built all four dashboard views and wrote the final recommendation identifying The Gap as the strongest investment based on space efficiency ($10.26/sq ft) and revenue performance.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="tab-label"&gt;Dashboard Screenshots&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="tab-imgs"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="tab-img-wrap"&gt;&lt;img src="tableau_bar.png" alt="Weekly Sales by Store"/&gt;&lt;div class="tab-cap"&gt;Weekly Sales by Store&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="tab-img-wrap"&gt;&lt;img src="tableau_map.png" alt="Store Location Map"/&gt;&lt;div class="tab-cap"&gt;Store Location &amp;amp; Size Map&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="tab-img-wrap"&gt;&lt;img src="tableau_pie.png" alt="Sales per Sq Ft"/&gt;&lt;div class="tab-cap"&gt;Sales per Square Foot&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="tab-img-wrap"&gt;&lt;img src="tableau_rec.png" alt="Final Recommendation"/&gt;&lt;div class="tab-cap"&gt;Final Recommendation&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="port-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="port-head"&gt;&lt;div class="port-icon"&gt;🎓&lt;/div&gt;&lt;div&gt;&lt;h4&gt;Fraternity Academic Leadership Program&lt;/h4&gt;&lt;span&gt;Mentorship &amp;amp; Leadership · Individual&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="port-body"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="port-ctx"&gt;Context&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;As Academic Chair for Sigma Phi Epsilon (2024–2025), I designed and ran a structured mentorship program for 40 first-year members focused on academics, time management, and professional development.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="port-claim"&gt;&lt;strong&gt;Skills Demonstrated&lt;/strong&gt;&lt;p&gt;Program design, peer mentorship, workshop facilitation, accountability systems, written and verbal communication&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="port-claim"&gt;&lt;strong&gt;My Contribution (Sole Author)&lt;/strong&gt;&lt;p&gt;Designed the entire curriculum and mentorship structure from scratch, including all written materials. Led weekly sessions on study habits, goal-setting, and professional identity — skills that translate directly to client-facing work in wealth management.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- CONTACT --&gt;</p>
+<p class="p1">&lt;section class="contact-sec" id="contact"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="sec-label" style="color:var(--gold);"&gt;Let's Connect&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;h2 class="sec-title sec-title-light"&gt;Ready to Talk Finance?&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="contact-grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="contact-text"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;Whether you're a recruiter, a mentor in wealth management, or someone who wants to connect over financial markets and career development — I'd love to hear from you. I'm always open to conversations that push me to grow.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="c-links"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="mailto:ajattaran@gmail.com" class="c-link"&gt;&lt;div class="c-icon"&gt;✉&lt;/div&gt;ajattaran@gmail.com&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="https://www.linkedin.com/in/aj-attaran-56b6483a6/" target="_blank" class="c-link"&gt;&lt;div class="c-icon" style="font-size:.72rem;font-weight:700;"&gt;in&lt;/div&gt;linkedin.com/in/aj-attaran-56b6483a6&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="https://youtu.be/lvnp07VzANg" target="_blank" class="c-link"&gt;&lt;div class="c-icon"&gt;▶&lt;/div&gt;Professional Persona Video&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="c-form"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="fg"&gt;&lt;label&gt;Your Name&lt;/label&gt;&lt;input type="text" placeholder="Jane Smith"/&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="fg"&gt;&lt;label&gt;Your Email&lt;/label&gt;&lt;input type="email" placeholder="jane@example.com"/&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="fg"&gt;&lt;label&gt;Message&lt;/label&gt;&lt;textarea placeholder="I'd love to connect about..."&gt;&lt;/textarea&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;button class="btn-send" onclick="alert('Thank you! Please send your message directly to ajattaran@gmail.com')"&gt;Send Message&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;footer&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;p&gt;© 2026 AJ Attaran · University of Arizona, Eller College of Management&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="foot-logo"&gt;AJ&lt;/div&gt;</p>
+<p class="p1">&lt;/footer&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
 </body>
 </html>
